@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog</title>
+        <link rel="stylesheet" href="https://unpkg.com/papercss@1.8.3/dist/paper.min.css">
+        <link rel="stylesheet" href="/style.css">
+        <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    </head>
+    <body>
+        <header>
+    <nav class="border fixed split-nav background-secondary">
+        <div class="nav-brand">
+            <h3 class="padding-left-small"><a href="/home">Daily Project</a></h3>
+        </div>
+        <div class="collapsible">
+            <input id="collapsible1" type="checkbox" name="collapsible1">
+            <label for="collapsible1">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </label>
+            <div class="collapsible-body">
+                <ul class="inline">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/projects">Projects</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        <main>
+        
+<div class="section container">
+  <div class="paper container-lg border border-2 border-primary">
+      <h1 class="text-secondary ">Blog</h1>
+      <h3>Here are key blog posts about projects, updates, and the most important stuff you need to know!</h3>
+  </div>    
+  <div class="paper container-lg border border border-4 border-primary">
+  <article class="article">
+    <h3 class="article-title"><a href="/blog/day-4-new-project4/">Day 4 - New Project 4</a></h3>
+    
+  </article> 
+
+  <article class="article">
+    <h3 class="article-title"><a href="/blog/day-3-new-project3/">Day 3 - New Project 3</a></h3>
+    
+  </article> 
+
+  <article class="article">
+    <h3 class="article-title"><a href="/blog/day-2-new-project2/">Day 2 - New Project 2</a></h3>
+    
+  </article> 
+
+  <article class="article">
+    <h3 class="article-title"><a href="/blog/day-1-new-project/">Day 1 - New Project</a></h3>
+    
+  </article> 
+
+  <article class="article">
+    <h3 class="article-title"><a href="/blog/day-0-building-this-website/">Day 0 - Building This Website</a></h3>
+    
+  </article> 
+
+  </div>
+  
+</div>
+
+        </main>
+        <footer class="site-footer">
+
+  <p>© 2022 @GeauxWeisbeck4. All rights reserved.</p>
+</footer>
+
+        <script>
+    if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+            if (!user) {
+                window.netlifyIdentity.on("login", () => {
+                    document.location.href = "/admin/";
+                });
+            }
+        });
+    }
+    </script>
+    </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Day 0 - Building This Website</title>
+        <link rel="stylesheet" href="https://unpkg.com/papercss@1.8.3/dist/paper.min.css">
+        <link rel="stylesheet" href="/style.css">
+        <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    </head>
+    <body>
+        <header>
+    <nav class="border fixed split-nav background-secondary">
+        <div class="nav-brand">
+            <h3 class="padding-left-small"><a href="/home">Daily Project</a></h3>
+        </div>
+        <div class="collapsible">
+            <input id="collapsible1" type="checkbox" name="collapsible1">
+            <label for="collapsible1">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </label>
+            <div class="collapsible-body">
+                <ul class="inline">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/projects">Projects</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        <main>
+        
+<article class="main-article padding-large">
+
+  <div class="paper row flex-center border border-5 border-primary">
+    <h1 class="article-title">
+      Day 0 - Building This Website
+    </h1>
+  </div>
+    
+  <div class="row flex-center border border-4 border-primary background-success">
+    <h2>Building this Website From Scratch!</h2>
+<p class="text-lead"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+Commodi deserunt porro tenetur maxime odit fugiat exercitationem. Corrupti sed 
+quis pariatur cum quasi explicabo harum officia ab modi et, voluptatum inventore?</p>
+<p class="padding-left-large">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+Commodi deserunt porro tenetur maxime odit fugiat exercitationem. Corrupti sed 
+quis pariatur cum quasi explicabo harum officia ab modi et, voluptatum inventore?
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+Commodi deserunt porro tenetur maxime odit fugiat exercitationem. Corrupti sed 
+quis pariatur cum quasi explicabo harum officia ab modi et, voluptatum inventore?
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+Commodi deserunt porro tenetur maxime odit fugiat exercitationem. Corrupti sed 
+quis pariatur cum quasi explicabo harum officia ab modi et, voluptatum inventore?
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+Commodi deserunt porro tenetur maxime odit fugiat exercitationem. Corrupti sed 
+quis pariatur cum quasi explicabo harum officia ab modi et, voluptatum inventore?</p>
+<p class="padding-left-large">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+Commodi deserunt porro tenetur maxime odit fugiat exercitationem. Corrupti sed 
+quis pariatur cum quasi explicabo harum officia ab modi et, voluptatum inventore?
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+Commodi deserunt porro tenetur maxime odit fugiat exercitationem. Corrupti sed 
+quis pariatur cum quasi explicabo harum officia ab modi et, voluptatum inventore?
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+Commodi deserunt porro tenetur maxime odit fugiat exercitationem. Corrupti sed 
+quis pariatur cum quasi explicabo harum officia ab modi et, voluptatum inventore?
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+Commodi deserunt porro tenetur maxime odit fugiat exercitationem. Corrupti sed 
+quis pariatur cum quasi explicabo harum officia ab modi et, voluptatum inventore?</p>
+  </div>
+
+</article>
+        </main>
+        <footer class="site-footer">
+
+  <p>© 2022 @GeauxWeisbeck4. All rights reserved.</p>
+</footer>
+
+        <script>
+    if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+            if (!user) {
+                window.netlifyIdentity.on("login", () => {
+                    document.location.href = "/admin/";
+                });
+            }
+        });
+    }
+    </script>
+    </body>
+</html>

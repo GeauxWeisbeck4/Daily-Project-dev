@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projects</title>
+        <link rel="stylesheet" href="https://unpkg.com/papercss@1.8.3/dist/paper.min.css">
+        <link rel="stylesheet" href="/style.css">
+        <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    </head>
+    <body>
+        <header>
+    <nav class="border fixed split-nav background-secondary">
+        <div class="nav-brand">
+            <h3 class="padding-left-small"><a href="/home">Daily Project</a></h3>
+        </div>
+        <div class="collapsible">
+            <input id="collapsible1" type="checkbox" name="collapsible1">
+            <label for="collapsible1">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </label>
+            <div class="collapsible-body">
+                <ul class="inline">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/projects">Projects</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        <main>
+        
+<section class="hero background-primary">
+      <div class="container flow">
+        <div class="paper container-lg border border-5 border-primary">
+            <h1 class="text-secondary">Daily Projects Dev</h1>
+            <h3>Welcome to the Daily Projects Dev website, where I blog about my daily projects and share daily ideas for web dev projects!</h3>
+        </div>
+        <div class="row flex-center border border-4 border-primary background-success">
+            <h2 class="md-8 col">This page includes my <a class="text-background-danger" href="https://dailyproject.dev">Daily Projects</a>.
+            </h2>
+            
+        
+        <div class="card padding-bottom-small" style="width: 20rem;">
+            <img src="https://picsum.photos/768" alt="Card example image">
+
+            <div class="card-body">
+                <h4 class="card-title">My First Project!</h4>
+                <h5 class="card-subtitle">Making this website</h5>
+                <p class="card-text">Follow along to learn how I made this website!</p>
+                <button>Let me go here!</button>
+            </div>
+        </div>
+      </div>
+</section
+        </main>
+        <footer class="site-footer">
+
+  <p>© 2022 @GeauxWeisbeck4. All rights reserved.</p>
+</footer>
+
+        <script>
+    if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+            if (!user) {
+                window.netlifyIdentity.on("login", () => {
+                    document.location.href = "/admin/";
+                });
+            }
+        });
+    }
+    </script>
+    </body>
+</html>
