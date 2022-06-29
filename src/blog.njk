@@ -1,0 +1,17 @@
+---
+title: Blog 
+layout: 'base.njk'
+---
+
+<div class="section container">
+  <div class="paper container-lg border border-2 border-primary">
+      <h1 class="text-secondary ">Blog</h1>
+      <h3>Here are key blog posts about projects, updates, and the most important stuff you need to know!</h3>
+  </div>    
+  <div class="paper container-lg border border border-4 border-primary">
+          {%- for post in collections.post | reverse -%}
+            {% include 'article-snippet.njk' %}
+          {%- endfor %}
+  </div>
+  
+</div>

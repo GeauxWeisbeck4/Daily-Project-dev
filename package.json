@@ -1,0 +1,19 @@
+{
+    "name": "dailyprojectdev",
+    "version": "1.0.0",
+    "description": "These are the files for my Daily Project website.",
+    "main": "index.js",
+    "scripts": {
+        "start": "eleventy --serve",
+        "build": "eleventy"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@11ty/eleventy": "^1.0.0"
+    },
+    "dependencies": {
+        "nunjucks": "^3.2.3"
+    }
+}

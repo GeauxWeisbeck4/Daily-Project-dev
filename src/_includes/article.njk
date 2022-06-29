@@ -1,0 +1,17 @@
+---
+layout: 'base.njk'
+---
+
+<article class="main-article padding-large">
+
+  <div class="paper row flex-center border border-5 border-primary">
+    <h1 class="article-title">
+      {{ title }}
+    </h1>
+  </div>
+    
+  <div class="row flex-center border border-4 border-primary background-success">
+    {{ content | safe}}
+  </div>
+
+</article>
