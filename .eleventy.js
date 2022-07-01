@@ -5,9 +5,9 @@ const {
 module.exports = function (eleventyConfig) {
 
     eleventyConfig.addPassthroughCopy("https://unpkg.com/papercss@1.8.3/dist/paper.min.css")
-    eleventyConfig.addPassthroughCopy('./src/style.css');
-    eleventyConfig.addPassthroughCopy('./src/assets');
-    eleventyConfig.addPassthroughCopy('./src/admin');
+    eleventyConfig.addPassthroughCopy('src/style.css');
+    eleventyConfig.addPassthroughCopy('src/assets');
+    eleventyConfig.addPassthroughCopy('src/admin');
 
 
     eleventyConfig.addFilter("postDate", (dateObj) => {
@@ -17,7 +17,7 @@ module.exports = function (eleventyConfig) {
     return {
         dir: {
             input: "src",
-            output: "public"
+            output: "_site"
         }
     };
 }
